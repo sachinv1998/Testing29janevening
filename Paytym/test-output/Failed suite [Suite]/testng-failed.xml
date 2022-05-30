@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="pack123.TestNg2">
+        <methods>
+          <include name="launchthebrowser"/>
+          <include name="closebrowser"/>
+          <include name="testtheTasks"/>
+          <include name="logouttheapllication"/>
+          <include name="launchtheapplication"/>
+          <include name="cleartheobject"/>
+          <include name="createPomobject"/>
+          <include name="testthereport"/>
+        </methods>
+      </class> <!-- pack123.TestNg2 -->
+      <class name="pack123.TestNg">
+        <methods>
+          <include name="testtheTasks"/>
+          <include name="launchtheapplication"/>
+          <include name="logouttheapllication"/>
+          <include name="cleartheobject"/>
+          <include name="createPomobject"/>
+          <include name="testthereport"/>
+          <include name="launchthebrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- pack123.TestNg -->
+    </classes>
+  </test> <!-- FirefoxTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
