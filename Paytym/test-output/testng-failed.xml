@@ -6,7 +6,6 @@
       <class name="pack123.Facebookscreenshot">
         <methods>
           <include name="faceboklaunch"/>
-          <include name="reardown"/>
         </methods>
       </class> <!-- pack123.Facebookscreenshot -->
     </classes>

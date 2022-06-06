@@ -1,7 +1,9 @@
 package pack123;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -91,7 +93,7 @@ public class TestNg {
        }
 	     
         @AfterMethod
-	    public void logouttheapllication(ITestResult result) throws InterruptedException
+	    public void logouttheapllication(ITestResult result) throws InterruptedException, EncryptedDocumentException, IOException
 	    {
         	if(ITestResult.FAILURE==result.getStatus())
         	{
